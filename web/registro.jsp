@@ -10,13 +10,16 @@
     <div><b><c:out value="${mensaje}" /></b></div>
 </c:if>
 
-<form action="./crear_usuario" method="POST">
-    Identificacion: <input type="text" name="identificacion"/><br>
-    Nombre:         <input type="text" name="nombre"/><br>
-    Edad:           <input type="text" name="edad"/><br>
-    Estado Civil:   <input type="text" name="EstadoCivil"/><br>
-    Trabaja:        <input type="text" name="trabaja"/><br>
-    <input type="submit" value="Registrar" />
-</form>
+    <form action="./crear_usuario" method="POST"><br/>
+        <pre>
+        Identificacion: <input type="text" name="identificacion"/><br/>
+        Nombre:         <input type="text" name="nombre"/><br/>
+        Edad:           <input type="text" name="edad"/><br/>
+        EstadoCivil:    <input type="text" name="estadoCivil"/><br/>
+        Trabaja:        <input type="text" name="trabaja"/><br/>
+        Correo:         <input type="text" name="correo"/><br/>
+        </pre>
+        <input type="submit" value="Registrar" />
+    </form>
 
 <%@ include file="footer.jsp" %>
